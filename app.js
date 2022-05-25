@@ -38,6 +38,12 @@ function browserRedirect () {
 }
 browserRedirect();
 
+
+if (!isMobile) {
+  document.querySelector('button.two').style.display = 'none'
+}
+
+
 video.addEventListener('canplay', function () {
   if (!isMobile) {
     this.width = 720;
